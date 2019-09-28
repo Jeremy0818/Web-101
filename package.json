@@ -1,0 +1,22 @@
+{
+  "name": "web-development-workshop-101",
+  "version": "1.0.0",
+  "description": "Microsoft Azure: Web Development Workshop 101",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "./node_modules/.bin/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingstonfung/web101-class-project.git"
+  },
+  "author": "Kingston Fung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingstonfung/web101-class-project/issues"
+  },
+  "homepage": "https://github.com/kingstonfung/web101-class-project#readme",
+  "devDependencies": {
+    "cypress": "3.1.5"
+  }
+}

@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/about-us.css" rel="stylesheet">
+    <link href="/styles/desktop.css" rel="stylesheet">
+    <link href="/styles/reservation-widget.css" rel="stylesheet">
+    <title>Sunny's Coffee Shop</title>
+    <script src="/scripts/main.js" type="text/javascript"></script>
+    <script src="/scripts/reservation-widget.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <nav class="mobile-flyout-nav">
+      <div class="nav-header">
+        Menu
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="jobs.html">Jobs</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="reservation-widget">
+      <div class="dot-button">
+        <img src="images/calendar.svg" />
+      </div>
+      <div class="flyout-reservation-form">
+        <span class="close-button">x</span>
+        <form id="reservationForm">
+          <h3>Reserver A Table</h3>
+          <div class="selection-wrapper">
+            <label for="headCountSelector">How Many People?</label>
+            <select id="headCountSelector" class="head-count-selector">
+              <option value="1">One Person</option>
+              <option value="2">Two People</option>
+              <option value="3">Three People</option>
+              <option value="4">Four People</option>
+            </select>
+          </div>
+          <div class="selection-wrapper">
+            <label for="head-count-selector">Which Date?</label>
+            <select id="daySelector" class="day-selector"></select>
+          </div>
+          <div class="selection-wrapper">
+            <label for="timeSelector">What Time?</label>
+            <select id="timeSelector" class="time-selector">
+              <option value="11:00am">11:00am</option>
+              <option value="11:30am">11:30am</option>
+              <option value="12:00pm">12:00pm</option>
+              <option value="12:30pm">12:30pm</option>
+              <option value="1:00pm">1:00pm</option>
+              <option value="1:30pm">1:30pm</option>
+              <option value="2:00pm">2:00pm</option>
+              <option value="2:30pm">2:30pm</option>
+              <option value="3:00pm">3:00pm</option>
+              <option value="3:30pm">3:30pm</option>
+              <option value="4:00pm">4:00pm</option>
+              <option value="4:30pm">4:30pm</option>
+              <option value="5:00pm">5:00pm</option>
+              <option value="5:30pm">5:30pm</option>
+              <option value="6:00pm">6:00pm</option>
+              <option value="6:30pm">6:30pm</option>
+            </select>
+          </div>
+          <div class="selection-wrapper">
+            <label for="reservationEmail">Your Email?</label>
+            <input id="reservationEmail" class="reservation-email" type="text"></input>
+          </div>
+          <button class="submit-reservation" type="button">Reserve Table</button>
+        </form>
+        <div class="thank-you hide">
+          <h3>Thank You!</h3>
+          <p>Will be seeing you soon.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <header>
+        <div class="logo-wrapper">
+          <a href="/index.html">
+            <img class="logo" src="/images/logo.png" />
+          </a>
+        </div>
+        <div class="links-wrapper">
+          <a href="/about.html">About</a>
+          <a href="/jobs.html">Jobs</a>
+          <a href="/contact.html">Contact Us</a>
+        </div>
+        <div class="hamburger-menu-wrapper">
+          <label for="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+        </div>
+      </header>
+      <main>
+        <div class="hero">
+          <div class="hero-content">
+            <h1>How we started</h1>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Our passion to use and serve the best coffee.</h3>
+          <div class="about-text">
+            <p>
+              We started it to fulfill our desire to create,
+              do work we were passionate about,
+              as well as our need for and interest in great coffee.
+              Here's what led to starting it.
+            </p>
+            <p>
+              Shop single shot dark grounds instant whipped con panna spoon irish.
+              Filter steamed cup grounds dark sit white flavour caffeine white.
+              Aftertaste, cup, java est organic sugar robusta galão wings.
+              Sugar mug, trifecta viennese mocha caffeine cappuccino con panna.
+            </p>
+            <p>
+              Frappuccino galão arabica viennese java instant cinnamon.
+              Cinnamon so and half and half eu extraction froth.
+              Chicory mocha, cultivar percolator con panna single shot fair trade.
+              Iced instant affogato, sit siphon single origin that extra robust.                
+            </p>
+            <p>
+              Whipped, seasonal fair trade robust coffee, extraction, robusta espresso plunger pot
+              robusta beans spoon. Barista dark beans americano percolator single origin white sweet strong dark.
+              Frappuccino wings robusta cultivar kopi-luwak arabica filter bar black cream café au lait.
+              Redeye, in viennese roast café au lait body acerbic.
+            </p>
+          </div>
+        </div>
+        <div class="newsletter-wrapper">
+          <div class="divider-wrapper">
+            <div class="divider">
+              <div class="deco-line"></div>
+              Stay In Touch
+              <div class="deco-line"></div>
+            </div>
+          </div>
+          <h2>Coupons and Updates</h2>
+          <form class="newsletter-form">
+            <input id="newsletterEmail" type="text" placeholder="youremail@here.now">
+            <input id="submitForNewsletter" type="submit" value="submit">
+          </form>
+          <div class="newsletter-thank-you hide">
+            <h3>
+              Thank you for subscribing!
+            </h3>
+          </div>
+        </div>
+      </main>
+      <footer class="gird">
+        <div class="top-row one">
+          Sunny's Coffee Shop
+        </div>
+        <div class="top-row three">
+          Work With Us
+        </div>
+        <div class="top-row five">
+          Follow Us
+        </div>
+        <div class="top-row seven">
+          Contact Us
+        </div>
+        <div class="two">
+          <p>
+            A good place to meet
+          </p>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="four">
+          <p>
+            <a href="jobs.html">Jobs Page</a>
+          </p>
+          <p>
+            <a href="https://www.glassdoor.com">Glassdoor</a>
+          </p>
+          <p>
+            <a href="https://www.alberta.ca/occupational-health-safety.aspx">AB Workplace Safety</a>
+          </p>
+        </div>
+        <div class="six">
+            <p>              
+              <a href="https://www.facebook.com/lockstockcoffee" target="_blank">Facebook</a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/lockstockcoffee" target="_blank">Instagram</a>
+            </p>
+            <p>
+              <a href="https://www.yelp.ca/biz/lock-stock-coffee-edmonton-2" target="_blank">Yelp</a>              
+            </p>
+        </div>
+        <div class="eight">
+          <p>
+            <a href="contact.html">Directions</a>
+          </p>
+          <p>
+            10534 Jasper Ave
+            <br/>
+            Edmonton, AB T5J 1Z7
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
