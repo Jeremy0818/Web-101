@@ -1,0 +1,12 @@
+main .hero {
+  background-image: url('/images/about-us-hero.jpg');
+  height: 350px;
+}
+
+.hero h1 {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.about-text {
+  text-align: left;
+}

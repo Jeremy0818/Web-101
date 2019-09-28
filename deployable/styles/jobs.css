@@ -1,0 +1,87 @@
+main .hero {
+  background-image: url('/images/jobs-hero.jpg');
+  background-position: center center;
+  height: 350px;
+}
+
+.hero h1 {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  margin-top: -120px;
+}
+
+.about-text {
+  margin-bottom: 40px;
+}
+
+h2.job-title {
+  color: brown;
+  text-align: left;
+  margin-left: 2%;
+  margin-bottom: 0;
+}
+
+.job-listing-item {
+  width: 94%;
+  padding: 10px;
+  height: 100px;
+  background-color: rgb(240, 240, 240);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.job-listing-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.job-description {
+  text-align: left;
+  float: left;
+  font-size: 0.9em;
+  font-weight: 400;
+  width: 75%;
+}
+
+.apply-button-wrapper {
+  width: 25%;
+}
+
+.apply-button-wrapper button {
+  display: block;
+  border-radius: 2px;
+  background: black;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size: 0.8em;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.apply-button-wrapper button:hover {
+  background: grey;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  .job-listing-item {
+    height: 180px;
+    flex-direction: column;
+  }
+
+  .job-description {
+    width: 100%;
+  }
+
+  .apply-button-wrapper {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .job-listing-item {
+    height: 220px;
+  }
+}

@@ -1,0 +1,129 @@
+.reservation-widget {
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+}
+
+.reservation-widget .thank-you {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.reservation-widget .thank-you.hide {
+  display: none;
+}
+
+.reservation-widget form.hide {
+  display: none;
+}
+
+.dot-button {
+  box-shadow: 3px 2px 4px 1px rgba(25, 25, 25, 0.25);
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: brown;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot-button img {
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.flyout-reservation-form {
+  border: 1px solid lightgray;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+            0 2px 4px 0 rgba(0,0,0,0.08);
+  bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  height: 185px;
+  position: fixed;
+  transition: all 400ms ease-out;
+  right: -500px;
+  width: 340px;
+  padding: 20px;
+}
+
+.flyout-reservation-form.active {
+  transform: translate3d(-550px, 0, 0);
+}
+
+.flyout-reservation-form h3 {
+  color: brown;
+  margin: 0 0 15px 0;
+}
+
+.flyout-reservation-form select {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 1.5em;
+  color: brown;
+  cursor: pointer;
+}
+
+.selection-wrapper {
+  width: 100%;
+}
+
+.selection-wrapper label {
+  display: inline-block;
+  margin-right: 20px;
+  width: 140px;
+}
+
+button.submit-reservation {
+  background-color: brown;
+  border: none;
+  color: white;
+  height: 25px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button.submit-reservation:active {
+  background: lightcoral;
+}
+
+button.submit-reservation:focus {
+  outline: 0;
+}
+
+input.reservation-email {
+  border: 1px solid lightgray;
+  width: 170px;
+}
+
+@media (max-width: 450px) {
+  .flyout-reservation-form.active {
+    transform: translate3d(-500px, 0, 0);
+  }
+}
+
+@media (max-width: 380px) {
+  .flyout-reservation-form {
+    width: 96vw;
+    padding: 5px;
+  }
+
+  .selection-wrapper select {
+    width: 130px;
+  }
+  
+  .selection-wrapper input {
+    width: 130px;
+  }
+}
